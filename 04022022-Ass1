@@ -1,0 +1,22 @@
+#include <stdio.h>  
+#include<string.h>
+int main()  
+{  
+    
+   int i, vc = 0, cc= 0;  
+   char str[10];
+   printf("enter any string");
+   gets(str);
+   for(i = 0; i < strlen(str); i++){  
+       str[i] = tolower(str[i]);  
+       if(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u') {  
+           vc++;  
+        }  
+        else if(str[i] >= 'a' && str[i] <= 'z'){  
+            cc++;  
+        }  
+   }  
+   printf("Number of vowels : %d\n", vc);  
+   printf("Number of consonant : %d", cc);  
+   return 0;  
+} 
