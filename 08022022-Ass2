@@ -1,0 +1,14 @@
+#include <stdio.h>
+   void reverse (int n) {
+    printf ("%d\t", n);
+    if (n > 1)
+        reverse (n - 1);
+}
+
+int main () {
+    int value;
+    printf("enter a value:");
+    scanf("%d", &value);
+    reverse (value);
+    return 0;
+}
