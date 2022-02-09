@@ -1,0 +1,17 @@
+include <stdio.h>
+
+int main()
+{
+    int a=5;
+    int *p;
+    p=&a;
+    (*p)++;
+    printf("increment:%d",a);
+     (*p)--;
+    printf("\ndecrement:%d",a);
+    (*p)=(*p)+2;
+    printf("\naddition%d",a);
+    (*p)=(*p)-4;
+    printf("\nsubtraction:%d",a);
+    return 0;
+}
