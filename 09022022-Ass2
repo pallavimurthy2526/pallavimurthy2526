@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int a[5];
+   int i,sum=0;
+   int *p;
+
+   printf("\nEnter array elements");
+   for(i=0;i<5;i++)
+      scanf("%d",&a[i]);
+   p = a;
+
+   for(i=0;i<5;i++) 
+   {
+      sum = sum + *p;
+      p++;
+   }
+
+   printf("\nThe sum is: %d",sum);
+}
